@@ -1,5 +1,4 @@
 package tema1.ejemplos;
-
 /**
  * Plantilla para objetos nuevos
  * Si es modulo de ejecuccion todo Static, plantillas (moldes) no es Static.
@@ -15,10 +14,9 @@ public class UsuarioRedSocial {
 	
 	// Estas variables son específicas de cada instancia de la clase.
 	// Por eso estas variables no son 'static', a diferencia de la de arriba.
-	String nombre = "";
-	int numSeguidores;
+	public String nombre = "";
+	public int numSeguidores;
 
-	
 	// Funciones (métodos):
 	
 	// Constructor que inicializa los atributos con valores proporcionados.
@@ -45,4 +43,5 @@ public class UsuarioRedSocial {
 	
 	//Modificadores:
 	/*...*/
+	
 }
