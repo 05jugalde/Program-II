@@ -1,4 +1,5 @@
 package tema1.ejemplos;
+
 /**
  * Plantilla para objetos nuevos
  * Si es modulo de ejecuccion todo Static, plantillas (moldes) no es Static.
