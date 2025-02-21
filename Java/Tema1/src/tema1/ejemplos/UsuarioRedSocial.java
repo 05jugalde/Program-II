@@ -34,18 +34,57 @@ public class UsuarioRedSocial {
 	
 	// Consultores:
 	
-	// Método que calcula el valor estimado del usuario en función de sus seguidores.
+	/**
+	 * Método que calcula el valor estimado del usuario en función de sus seguidores.
+	 */
 	public double calcularValor() {
 		// No es necesario usar 'this' aquí porque no hay ambigüedad.
 		return VALOR_POR_USUARIO * this.numSeguidores; 
 	}
 	
+	/**
+	 * Metodo que consulta el numero de seguidores de un usuario
+	 */
 	public int getNumSeguidores() {
 		return numSeguidores;
 	}
 	
+	/**
+	 * Metodo que consulta el nombre de un usuario
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+	
 	
 	//Modificadores:
-	/*...*/
 	
+	/**
+	 * Modificar el nombre y el numero de seguidores de un usuario
+	 * @param nombre Nuevo nombre de usuario
+	 * @param numSeguidores Nuevo numero de seguidores
+	 */
+	
+	public void setNuevosDatos(String nombre, int numSeguidores) {
+		this.nombre = nombre;
+		this.numSeguidores = numSeguidores;
+	}
+	
+	
+	/**
+	 * Modifica el nombre de un suauario
+	 * @param nombre Nuevo nombre de usuario
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	/**
+	 * Modifica el numero de seguidores de un suauario
+	 * @param numSeguidores Nuevo numero de seguidores
+	 */
+	public void setNumSeguidores(int numSeguidores) {
+		this.numSeguidores = numSeguidores;
+	}
+
 }
