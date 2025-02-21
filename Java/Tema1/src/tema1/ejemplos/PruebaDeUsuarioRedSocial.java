@@ -24,6 +24,14 @@ public class PruebaDeUsuarioRedSocial {
 		 
 		 crearListaDeUsuarios(u1, u2, u3, u4, u5); 
 		 
+		 UsuarioRedSocial u6 = new UsuarioRedSocial("Atharratze", 1342);
+		 System.out.println(u6.nombre + " - " + u6.numSeguidores);
+		 u6.setNombre("asiermendibe");
+		 System.out.println(u6.nombre + " - " + u6.numSeguidores);
+		 u6.setNumSeguidores(438);
+		 System.out.println(u6.nombre + " - " + u6.numSeguidores);
+		 u6.setNuevosDatos("egurrolamarkel", 333);
+		 System.out.println(u6.nombre + " - " + u6.numSeguidores);
 	 }
 	 
 	 public static void crearListaDeUsuarios(UsuarioRedSocial... usuarios){
@@ -37,8 +45,5 @@ public class PruebaDeUsuarioRedSocial {
 			
 		}	
 	 }
-	 
-	// Falta ver como ordenar la lista
-	 
 	 
 }
