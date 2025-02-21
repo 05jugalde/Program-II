@@ -40,6 +40,10 @@ public class UsuarioRedSocial {
 		return VALOR_POR_USUARIO * this.numSeguidores; 
 	}
 	
+	public int getNumSeguidores() {
+		return numSeguidores;
+	}
+	
 	
 	//Modificadores:
 	/*...*/
