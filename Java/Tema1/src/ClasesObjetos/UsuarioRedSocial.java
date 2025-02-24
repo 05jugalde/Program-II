@@ -38,7 +38,7 @@ public class UsuarioRedSocial {
 	/**
 	 * Método que calcula el valor estimado del usuario en función de sus seguidores.
 	 */
-	public double calcularValor() {
+	public double calcularValorEstimado() {
 		// No es necesario usar 'this' aquí porque no hay ambigüedad.
 		return VALOR_POR_USUARIO * this.numSeguidores; 
 	}
