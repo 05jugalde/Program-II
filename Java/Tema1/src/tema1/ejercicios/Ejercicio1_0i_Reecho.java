@@ -42,6 +42,7 @@ public class Ejercicio1_0i_Reecho {
         // Ordena los usuarios por número de seguidores en orden descendente
         ordenarUsuariosPorSeguidores(usuarios);
 
+        
         // Imprime la lista de usuarios ordenada
         System.out.println("Lista Ordenada: ");
         System.out.println();

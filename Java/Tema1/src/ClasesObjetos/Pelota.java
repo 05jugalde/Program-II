@@ -81,4 +81,8 @@ public class Pelota {
 	public void setColor(char color) {
 		this.color = color;
 	}
+	
+	public void setBota(boolean bota) {
+		this.bota = bota;
+	}
 }

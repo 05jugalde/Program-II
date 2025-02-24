@@ -57,6 +57,31 @@ public class UsuarioRedSocial {
 		return nombre;
 	}
 	
+	/*
+	public String aString() {
+		return this.nombre + " - " + this.numSeguidores;
+	}
+	
+	public String toString() {
+		return aString();
+	}
+	*/
+	
+	public String toString() {
+		return this.nombre + " - " + this.numSeguidores;
+	}
+	
+	/**
+	 * Consulta si el usuario "this" se ordena despues de "u2".
+	 * Es decir, si "this" tiene menos seguidores que "u2".
+	 * @param u2 Segundo usuario para la comparacion.
+	 * @return Devuelve true si "this" thiene que ir despues que "u2", false en caso contrario.
+	 */
+	
+	public boolean vaDespues(UsuarioRedSocial u2) {
+		return this.numSeguidores < u2.numSeguidores;
+	}
+	
 	
 	//Modificadores:
 	
@@ -65,7 +90,6 @@ public class UsuarioRedSocial {
 	 * @param nombre Nuevo nombre de usuario
 	 * @param numSeguidores Nuevo numero de seguidores
 	 */
-	
 	public void setNuevosDatos(String nombre, int numSeguidores) {
 		this.nombre = nombre;
 		this.numSeguidores = numSeguidores;
@@ -87,5 +111,5 @@ public class UsuarioRedSocial {
 	public void setNumSeguidores(int numSeguidores) {
 		this.numSeguidores = numSeguidores;
 	}
-
+	
 }
