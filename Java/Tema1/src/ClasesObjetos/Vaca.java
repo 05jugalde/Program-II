@@ -2,9 +2,9 @@ package ClasesObjetos;
 
 public class Vaca {
     /* Atributos de la clase Vaca */
-    public String colorDePelo; // Almacena el color del pelo de la vaca
-    public int edad; // Almacena la edad de la vaca
-    public String nombre; // Almacena el nombre de la vaca
+    String colorDePelo; // Almacena el color del pelo de la vaca
+    int edad; // Almacena la edad de la vaca
+    String nombre; // Almacena el nombre de la vaca
 
     /* Constructores */
     public Vaca(String nombre, int edad, String colorDePelo) {
@@ -39,17 +39,17 @@ public class Vaca {
     /* Método para comparar la edad de dos vacas */
     public void compare(Vaca b) {
         if (this.edad > b.edad) {
-            System.out.println("La vaca " + this.getNombre() + " es más vieja que la vaca " + b.getNombre() + ".");
+            System.out.println("La vaca " + this.nombre + " es más vieja que la vaca " + b.nombre + ".");
         } else if (this.edad < b.edad) {
-            System.out.println("La vaca " + b.getNombre() + " es más vieja que la vaca " + this.getNombre() + ".");
+            System.out.println("La vaca " + b.nombre + " es más vieja que la vaca " + this.nombre + ".");
         } else if (this.edad == b.edad) {
-            System.out.println("Las vacas " + this.getNombre() + " y " + b.getNombre() + " tienen la misma edad.");
+            System.out.println("Las vacas " + this.nombre + " y " + b.nombre + " tienen la misma edad.");
         }
     }
 
     /* Método que imprime un mensaje con el sonido de la vaca */
     public void muu() {
-        System.out.println("Muuu... mi nombre es " + this.getNombre() + " y mi color de pelo es " + this.getColorDePelo() + ".");
+        System.out.println("Muuu... mi nombre es " + this.nombre + " y mi color de pelo es " + this.colorDePelo + ".");
     }
 
     /* Métodos Modificadores (Setters) */
