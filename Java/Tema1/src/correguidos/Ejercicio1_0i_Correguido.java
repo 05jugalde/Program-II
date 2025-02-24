@@ -43,7 +43,7 @@ public class Ejercicio1_0i_Correguido {
 		System.out.println("Lista con 3500 usuarios menos: ");
 		
 		System.out.println();
-		visualizarUsuariosYSeguidores(usuarios);
+		visualizarUsuariosYSeguidores(usuarios); 
 		
 		
 	}
