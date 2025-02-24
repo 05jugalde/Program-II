@@ -28,12 +28,23 @@ public class Ejercicio1_0i_Correguido {
 		System.out.println();
 		visualizarUsuariosYSeguidores(usuarios);
 		
-		for (int i=0; i<2; i++) {System.out.println();}
+		for (int i=0; i<3; i++) {System.out.println();}
 		ordenaUsuariosPorSeguidores(usuarios);
 		
 		System.out.println("Lista Ordenada:");
 		System.out.println();
 		visualizarUsuariosYSeguidores(usuarios);
+		
+		for (UsuarioRedSocial usuario : usuarios) {
+			usuario.restaSeguidores(3500);
+		}
+		
+		for (int i=0; i<3; i++) {System.out.println();}
+		System.out.println("Lista con 3500 usuarios menos: ");
+		
+		System.out.println();
+		visualizarUsuariosYSeguidores(usuarios);
+		
 		
 	}
 	
@@ -49,6 +60,7 @@ public class Ejercicio1_0i_Correguido {
 			for (int comp=0; comp<usuarios.length-1; comp++) {  // TODO mejorar que solo se hagan las comparaciones necesarias
 				boolean hayQueIntercambiar = usuarios[comp].vaDespues(usuarios[comp+1]);
 				if (hayQueIntercambiar) {
+					
 					/*
 					int aux = usuarios[comp].numSeguidores;
 					usuarios[comp].numSeguidores = usuarios[comp+1].numSeguidores;
@@ -66,9 +78,6 @@ public class Ejercicio1_0i_Correguido {
 			}
 		}
 	}
-	
-	//Menos 3500 usuarios a todos los seguidores de todos los usuarios.
-	// Resta en la clase objeto
 	
 }
 

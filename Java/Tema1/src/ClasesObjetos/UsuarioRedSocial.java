@@ -112,4 +112,18 @@ public class UsuarioRedSocial {
 		this.numSeguidores = numSeguidores;
 	}
 	
+	
+	/**
+	 * Calcula el numero de seguirdores restantes tras la resta de un "num" numero.
+	 * @param num Valor que se lerstara al numero tal de seguidores del Usuario.
+	 */
+	public void restaSeguidores(int num) {
+		if (this.numSeguidores - num < 0) {
+			this.numSeguidores = 0;
+		} 
+		else {
+			this.numSeguidores = this.numSeguidores - num;
+		}
+	}
+	
 }
