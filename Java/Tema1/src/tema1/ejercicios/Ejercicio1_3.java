@@ -20,6 +20,13 @@ public class Ejercicio1_3 {
 		v1.compare(v2);
 		
 		v1.setEdad(5);
+		
+		System.out.println("Ganado: ");
+		Vaca[] ganado = {v1,v2};
+		
+		for (Vaca vaca : ganado) {
+			System.out.println(vaca);
+		}
 	}
 	
 	

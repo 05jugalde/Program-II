@@ -46,6 +46,11 @@ public class Vaca {
             System.out.println("Las vacas " + this.nombre + " y " + b.nombre + " tienen la misma edad.");
         }
     }
+    
+    public String toString() {
+    	String colorDePeloTitle = this.colorDePelo.toUpperCase().charAt(0) + this.colorDePelo.substring(1, this.colorDePelo.length()).toLowerCase();
+    	return "Nombre: " + this.nombre + "\t| " + "Edad: " + this.edad + "\t| " + "Color de Pelo: " +  colorDePeloTitle;
+    }
 
     /* Método que imprime un mensaje con el sonido de la vaca */
     public void muu() {

@@ -22,7 +22,7 @@ public class PruebaDeUsuarioRedSocial {
 		 u2 = new UsuarioRedSocial("asier.c1", 784);
 		 System.out.println(u3.nombre);
 		 
-		 System.out.println(u2.calcularValor());
+		 System.out.println(u2.calcularValorEstimado());
 		 
 		 crearListaDeUsuarios(u1, u2, u3, u4, u5); 
 		 
