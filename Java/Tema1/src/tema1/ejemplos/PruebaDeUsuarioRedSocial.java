@@ -1,5 +1,7 @@
 package tema1.ejemplos;
-import java.util.ArrayList; 
+import java.util.ArrayList;
+
+import ClasesObjetos.UsuarioRedSocial; 
 
 
 public class PruebaDeUsuarioRedSocial {

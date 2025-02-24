@@ -1,10 +1,10 @@
 package tema1.ejercicios;
 
-// Importa la clase UsuarioRedSocial desde el paquete tema1.ejemplos
-import tema1.ejemplos.UsuarioRedSocial;
 // Importa las clases necesarias para trabajar con arrays y comparadores
 import java.util.Arrays;
 import java.util.Comparator;
+
+import ClasesObjetos.UsuarioRedSocial;
 
 public class Ejercicio1_0i_Reecho {
     public static void main(String[] args) {

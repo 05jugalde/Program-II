@@ -1,4 +1,4 @@
-package tema1.ejemplos;
+package ClasesObjetos;
 
 /**
  * Plantilla para objetos nuevos
