@@ -60,6 +60,10 @@ public class Pelota {
 	}
 	
 	
+	public String toString() {
+		return "Coordenadas: ( " + this.x + ", " + this.y + " )" + "\t| Radio: " + this.radio + "\t| Color: " + this.color; 
+	}
+	
 	//Modificadores:
 	public void setX(double x) {
 		this.x = x;

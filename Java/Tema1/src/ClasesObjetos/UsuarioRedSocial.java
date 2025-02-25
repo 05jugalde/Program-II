@@ -68,7 +68,7 @@ public class UsuarioRedSocial {
 	*/
 	
 	public String toString() {
-		return this.nombre + " - " + this.numSeguidores;
+		return "| " + "Nombre de Usuario: " + this.nombre + "\t| " + "Numero de Seguirdores: " + this.numSeguidores + "\t|";
 	}
 	
 	/**
