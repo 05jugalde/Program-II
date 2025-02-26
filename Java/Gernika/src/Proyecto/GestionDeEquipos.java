@@ -20,10 +20,19 @@ public class GestionDeEquipos {
         Equipo e1 = cargarEquipo("CadeteA");
         Equipo e2 = cargarEquipo("Alevin2014B");
         
+        e1.setPts(4);
+        e1.setPj(20);
+        e1.setPg(1);
+        e1.setPe(1);
+        e1.setPp(19);
+        e1.setGf(23);
+        e1.setGc(72);
+        
         Equipo[] equipos = {e1, e2};
         for(Equipo equipo: equipos) {System.out.println(equipo.toStrign());}
         
         visualizarJugadores(e1);
+        
     }
 
     /*

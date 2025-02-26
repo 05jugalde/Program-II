@@ -10,6 +10,13 @@ public class Equipo {
     String categoria; // Categoría del equipo (por ejemplo, "Juvenil", "Senior")
     String nombreEquipo; // Nombre del equipo
     String competicion; // Competición en la que participa el equipo
+    int pts; // Puntos del equipo
+    int pj; // Partidos jugados
+    int pg; // Partidos ganados
+    int pe; // Partidos empatados
+    int pp; // Partidos perdidos
+    int gf; // Goles a favor
+    int gc; // Goles en contra
     ArrayList<Jugador> jugadores; // Lista de jugadores del equipo
 
     /*
@@ -71,6 +78,34 @@ public class Equipo {
         return jugadores;
     }
 
+    public String getPts() {
+        return "Puntos: " + this.pts;
+    }
+
+    public String getPj() {
+        return "Partidos Jugados: " + this.pj;
+    }
+
+    public String getPg() {
+        return "Partidos Ganados: " + this.pg;
+    }
+
+    public String getPe() {
+        return "Partidos Empatados: " + this.pe;
+    }
+
+    public String sgetPp() {
+        return "Partidos Perdidos: " + this.pp;
+    }
+
+    public String getGf() {
+        return "Goles a Favor: " + this.gf;
+    }
+
+    public String getGc() {
+        return "Goles en Contra: " + this.gc;
+    }
+
     /*
      * MÉTODO add()
      * Este método añade un jugador al equipo.
@@ -130,5 +165,33 @@ public class Equipo {
             }
         }
         return null;
+    }
+
+    public void setPts(int pts) {
+        this.pts = pts;
+    }
+
+    public void setPj(int pj) {
+        this.pj = pj;
+    }
+
+    public void setPg(int pg) {
+        this.pg = pg;
+    }
+
+    public void setPe(int pe) {
+        this.pe = pe;
+    }
+
+    public void setPp(int pp) {
+        this.pp = pp;
+    }
+
+    public void setGf(int gf) {
+        this.gf = gf;
+    }
+
+    public void setGc(int gc) {
+        this.gc = gc;
     }
 }
