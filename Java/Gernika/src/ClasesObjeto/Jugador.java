@@ -3,8 +3,8 @@ package ClasesObjeto;
 public class Jugador {
     // Atributos de la clase Jugador
     String nombre; // Nombre del jugador
-    String equipo; // Equipo al que pertenece el jugador
     String apellido; // Apellido del jugador
+    String equipo; // Equipo al que pertenece el jugador
     int dorsal; // Número de dorsal del jugador
 
     /*
