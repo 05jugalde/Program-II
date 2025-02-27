@@ -4,20 +4,28 @@ import java.util.List;
 import java.util.ArrayList;
 import ClasesObjeto.Jugador;
 
+/**
+ * @author [Jon Ugalde]
+ * @version 1.0
+ * @since [27/02/2025]
+ * @description Esta clase representa un equipo de fútbol.
+ */
+
 @SuppressWarnings("unused")
 public class Equipo {
-    // Atributos de la clase Equipo
-    String categoria; // Categoría del equipo (por ejemplo, "Juvenil", "Senior")
-    String nombreEquipo; // Nombre del equipo
-    String competicion; // Competición en la que participa el equipo
-    int pts; // Puntos del equipo
-    int pj; // Partidos jugados del equipo
-    int pg; // Partidos ganados del equipo
-    int pe; // Partidos empatados del equipo
-    int pp; // Partidos perdidos del equipo
-    int gf; // Goles a favor del equipo
-    int gc; // Goles en contra del equipo
-    ArrayList<Jugador> jugadores; // Lista de jugadores del equipo
+	
+    // Atributos de la clase Equipo:
+	private String categoria; // Categoría del equipo (por ejemplo, "Juvenil", "Senior")
+	private String nombreEquipo; // Nombre del equipo
+	private String competicion; // Competición en la que participa el equipo
+	private int pts; // Puntos del equipo
+	private int pj; // Partidos jugados del equipo
+	private int pg; // Partidos ganados del equipo
+	private int pe; // Partidos empatados del equipo
+	private int pp; // Partidos perdidos del equipo
+	private int gf; // Goles a favor del equipo
+	private int gc; // Goles en contra del equipo
+	private ArrayList<Jugador> jugadores; // Lista de jugadores del equipo
 
     // Constructores:
     /**
@@ -37,6 +45,11 @@ public class Equipo {
         this.jugadores = new ArrayList<>();
     }
 
+    /**
+     * CONSTRUCTOR DE LA CLASE EQUIPO (VACÍO)
+     * Este constructor se utiliza para crear un objeto Equipo sin atributos iniciales.
+     * Se usa principalmente para la deserialización o para crear un objeto vacío antes de asignar valores.
+     */
     public Equipo() {
 		// TODO Auto-generated constructor stub
 	}
@@ -256,7 +269,7 @@ public class Equipo {
      * MÉTODO setGc()
      * Establece los goles en contra del equipo.
      *
-     * @param gc Los goles en contra del equipo.
+     * @param gc Los goles* en contra del equipo.
      */
     public void setGc(int gc) {
         this.gc = gc;
@@ -308,9 +321,6 @@ public class Equipo {
      */
     public void visualizarJugadores() {
         if (this.jugadores != null && !this.jugadores.isEmpty()) {
-            for (int i = 0; i < 2; i++) {
-                System.out.println();
-            }
             System.out.println(this.nombreEquipo + ":");
             System.out.println();
 
@@ -323,6 +333,11 @@ public class Equipo {
         }
     }
     
+    /**
+     * MÉTODO visualizarEstadisticasEquipo()
+     * Este método muestra las estadísticas del equipo, incluyendo categoría, competición,
+     * puntos, partidos jugados, ganados, empatados, perdidos, goles a favor y en contra.
+     */
     public void visualizarEstadisticasEquipo() {
         System.out.println("Estadísticas del equipo " + this.nombreEquipo + ":\n");
         System.out.printf("%-20s | %-10s\n", "Categoría", this.categoria);
@@ -336,8 +351,32 @@ public class Equipo {
         System.out.printf("%-20s | %-10d\n", "Goles en Contra", this.gc);
     }
     
+    /**
+     * MÉTODO toString()
+     * Devuelve una representación en cadena del objeto Equipo.
+     * Incluye el nombre del equipo, la categoría y la competición.
+     *
+     * @return Una cadena que representa el objeto Equipo.
+     */
     @Override
     public String toString() {
         return "Nombre del Equipo: " + this.nombreEquipo + "\t| " + "Categoria: " + this.categoria + "\t| " + "Competicion: " + this.competicion + "\t|";
     }
+   
+    /**
+     * MÉTODO obtenerJugador()
+     * Obtiene un jugador del equipo por su índice en la lista de jugadores.
+     *
+     * @param indice El índice del jugador a obtener (comenzando desde 1).
+     * @return El jugador en el índice especificado, o null si el índice está fuera de rango.
+     */
+   public Jugador obtenerJugador(int indice) {
+	   indice = indice -1;
+	   if (indice >= 0 && indice < jugadores.size()) {
+		   return jugadores.get(indice);
+       } else {
+           return null; // O lanza una excepción si prefieres
+       }
+   }
+    
 }
