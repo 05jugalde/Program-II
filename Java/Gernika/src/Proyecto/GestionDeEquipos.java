@@ -14,5 +14,6 @@ public class GestionDeEquipos {
     	j1 = Archivo.cargarEstadisticas("Markel", "Gorostiaga");
     	
     	j1.visualizarEstadisticasJugador();
+    	
     }
 }

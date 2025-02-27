@@ -7,7 +7,9 @@ import java.io.*;
  * @author [Jon Ugalde]
  * @version 1.0
  * @since [27/02/2025]
- * @description Clase Archivo: esta clase proporciona métodos estáticos para la manipulación de archivos, incluyendo la carga y guardado de objetos Equipo y Jugador en formato JSON, así como la eliminación, verificación y edición de nombres de archivos.
+ * @description Clase Archivo: Esta clase proporciona métodos estáticos para la manipulación de archivos, 
+ * incluyendo la carga y guardado de objetos Equipo y Jugador en formato JSON, así como la eliminación, 
+ * verificación y edición de nombres de archivos.
  */
 
 public class Archivo {
