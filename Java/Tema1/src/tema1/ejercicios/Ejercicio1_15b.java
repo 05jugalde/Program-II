@@ -14,7 +14,8 @@ public class Ejercicio1_15b {
 		l1.intercambiar(1, 0);
 		l1.intercambiar(0, 1);
 		
-		c1.visualizarCancion();
+		System.out.println(l1);
+		
 		
 	}
 }

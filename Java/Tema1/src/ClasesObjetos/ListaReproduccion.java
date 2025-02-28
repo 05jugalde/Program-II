@@ -19,6 +19,15 @@ public class ListaReproduccion {
         this.cancionesEliminadas = new ArrayList<>();
         this.cancionActual = 0;
     }
+    
+    /**
+     * Devuelve una representación en cadena de la lista de reproducción, mostrando solo el nombre y el tiempo total de reproducción.
+     * @return Una cadena que representa la lista de reproducción.
+     */
+    @Override
+    public String toString() {
+        return "Lista de reproducción: " + this.nombre + "\t| " + "Número de canciones: " + this.canciones.size() + "\t| " + "Tiempo total de reproducción: " + this.tiempoDeRepro() + "s";
+    }
 
     /**
      * Método para obtener el nombre de la lista de reproducción.

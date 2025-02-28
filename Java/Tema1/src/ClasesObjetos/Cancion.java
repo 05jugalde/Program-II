@@ -145,9 +145,10 @@ public class Cancion {
      */
     private void lineaDeTiempo() {
         while (this.puntoDeRepro < this.duracion && this.reproduciendo) {
-            this.puntoDeRepro += 0.01;
             try {
-                Thread.sleep(10);
+                Thread.sleep(2000);
+                this.puntoDeRepro += 1;
+                mostrarAvance();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -155,6 +156,22 @@ public class Cancion {
         if (this.puntoDeRepro >= this.duracion) {
             this.reproduciendo = false;
         }
+    }
+    
+    /**
+     * Método para mostrar el avance de la reproducción.
+     */
+    private void mostrarAvance() {
+        int progreso = (int) ((this.puntoDeRepro / this.duracion) * 100);
+        System.out.print("Reproduciendo: [");
+        for (int i = 0; i < 100; i += 5) {
+            if (i < progreso) {
+                System.out.print("=");
+            } else {
+                System.out.print(" ");
+            }
+        }
+        System.out.println("] " + String.format("%.2f", this.puntoDeRepro));
     }
 
     /**
