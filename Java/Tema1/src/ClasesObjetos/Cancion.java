@@ -3,10 +3,10 @@ package ClasesObjetos;
 public class Cancion {
     private String nombre;
     private String cantante;
-    private double duracion; // Duración de la canción en segundos
-    private boolean estado; // Estado de la canción (por ejemplo, disponible o no)
-    private double puntoDeRepro; // Punto de reproducción actual en segundos
-    private boolean reproduciendo = false; // Indica si la canción se está reproduciendo
+    private double duracion;
+    private boolean estado; 
+    private double puntoDeRepro; 
+    private boolean reproduciendo = false; 
 
     /**
      * Constructor que inicializa la canción con nombre y cantante.
