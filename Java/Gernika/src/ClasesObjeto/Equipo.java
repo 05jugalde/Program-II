@@ -96,7 +96,7 @@ public class Equipo {
      * @return La lista de jugadores del equipo.
      */
     public ArrayList<Jugador> getJugadores() {
-        return jugadores;
+        return this.jugadores;
     }
 
     /**
